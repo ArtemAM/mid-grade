@@ -1,5 +1,7 @@
 function getNext() {
-  // Редактировать можно только внутреннюю часть этой функции
+  let counter = 0;
+
+  return () => counter++;
 }
 
 const next = getNext();
