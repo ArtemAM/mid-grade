@@ -30,3 +30,6 @@ const elements1 = [-4, -2, 1, 3, 5];
 const elements2 = [-5, -3, -1, 2, 4, 6];
 
 console.log(mergeSortedArrays(elements1, elements2));
+
+// Временная сложность O(m + n)
+// Пространственная сложность O(m + n)

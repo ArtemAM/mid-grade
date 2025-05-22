@@ -11,3 +11,6 @@ function isPalindrome(str) {
 console.log("довод: ", isPalindrome("довод"));
 console.log("рыба: ", isPalindrome("рыба"));
 console.log("kekkek: ", isPalindrome("kekkek"));
+
+// Временная сложность O(n)
+// Пространственная сложность O(1)

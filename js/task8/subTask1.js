@@ -10,3 +10,6 @@ function findElement(arr, target) {
 const elements = "i am lord voldemort".split(" ");
 
 console.log(elements, findElement(elements, "lord"));
+
+// Временная сложность O(n)
+// Пространственная сложность O(1)
