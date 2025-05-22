@@ -2,7 +2,7 @@ const Gila = {
   dps: 600,
   speed: 1200,
   drones: [],
-  addDrone: (name) => {
+  addDrone: function (name) {
     this.drones.push({ name: name });
   },
 };

@@ -8,5 +8,5 @@ function applyDamage(points) {
   console.log(`[${this.name}]: Taking fire at ${points}. Need assistance.`);
 }
 
-const praxisDamage = SpaceShip;
+applyDamage.call(SpaceShip, 1000);
 console.log(SpaceShip);

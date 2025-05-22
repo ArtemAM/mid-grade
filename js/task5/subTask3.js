@@ -2,7 +2,7 @@ function Spaceship(name, dps) {
   this.name = name;
   this.dps = dps;
 
-  getDetails = function () {
+  this.getDetails = function () {
     return `${this.name} deals ${this.dps * 5} critical damage`;
   };
 }
