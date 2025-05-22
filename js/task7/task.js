@@ -7,10 +7,17 @@ const data = [
 ];
 
 function optimizeProcessing(arr) {
-  return {
+  const result = {
     activeItems: [],
-    totalValue: null,
+    totalValue: 0,
   };
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].active) {
+      result.activeItems.push(arr[i]);
+      result.totalValue += arr[i].value;
+    }
+  }
+  return result;
 }
 
 // для проверки
