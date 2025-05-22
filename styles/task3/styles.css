@@ -26,4 +26,30 @@ a {
 .container {
 }
 .header {
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  background-color: black;
+}
+
+.header__logo {
+  width: 110px;
+  height: 50px;
+}
+
+.header__menu {
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+  padding: 0;
+}
+
+body {
+  height: 200vh;
+  margin: 0;
+  padding: 0;
 }

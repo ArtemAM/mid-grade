@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задание 3</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Задание 3</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
-
-<body>
-
-  <div>
-    <h2>Задание 3</h2>
-    <h3>Шапка с навигацией</h3>
-    <p>
-      Сделать "шапку" для страницы, чтобы она была прикреплена к верху страницы и передвигалась при скролле, вместе с
-      экраном. <a href="https://www.eveonline.com/" target="_blank">пример поведения шапки</a> <br>
-      Внутри шапки отобразить логотип <span class="code">logo.png</span>. И элементы ссылок "News", "Store", "Download".
-      <br>
-      Логотип и ссылки должны быть в одну строку, как на примере:
-    </p>
-    <img src="example.png" alt="example" />
-  </div>
-
-  <div class="container">
-    <div class="header">
-      logo... links..
+  <body>
+    <div>
+      <h2>Задание 3</h2>
+      <h3>Шапка с навигацией</h3>
+      <p>
+        Сделать "шапку" для страницы, чтобы она была прикреплена к верху
+        страницы и передвигалась при скролле, вместе с экраном.
+        <a href="https://www.eveonline.com/" target="_blank"
+          >пример поведения шапки</a
+        >
+        <br />
+        Внутри шапки отобразить логотип <span class="code">logo.png</span>. И
+        элементы ссылок "News", "Store", "Download".
+        <br />
+        Логотип и ссылки должны быть в одну строку, как на примере:
+      </p>
+      <img src="example.png" alt="example" />
     </div>
-  </div>
 
-
-</body>
-
+    <div class="container">
+      <header class="header">
+        <img class="header__logo" src="./logo.png" alt="" />
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a href="#" class="header__link">News</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Store</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Download</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </body>
 </html>
