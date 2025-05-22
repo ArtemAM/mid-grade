@@ -24,6 +24,7 @@ a {
 
 /* Изменять только нижние стили */
 .container {
+  min-height: 100vh;
 }
 .box {
   width: 300px;
