@@ -46,3 +46,6 @@ async function complexEventLoopTask() {
 complexEventLoopTask();
 
 console.log("Global");
+
+// Start, Global, Microtask Depth: 3, Microtask Depth: 2, Microtask Depth: 1,
+// Recursion End, Awaited Timeout, End, Macro Task 1, Promise in Macro Task, Macro Task 2

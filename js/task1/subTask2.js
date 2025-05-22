@@ -24,3 +24,5 @@ setTimeout(() => {
 }, 0);
 
 console.log("End");
+
+// Start, End, Promise 1, Promise 2 with Result 1, Caught Error: Custom Error, Final Promise: Recovered Value, Timeout

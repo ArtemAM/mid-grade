@@ -28,3 +28,5 @@ queueMicrotask(() => {
 });
 
 console.log("End");
+
+// Start, Promise, Constructor, End, Promise 1, Promise 3, Microtask, Promise 2, Timeout 1, Nested Timeout
