@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задание 2</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Задание 2</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
+  <body>
+    <div>
+      <h2>Задание 2</h2>
+      <h3>Сетка, для карточек</h3>
+      <p>
+        Необходимо сделать адаптивную сетку, для каточек. <br />
+        Для разных размеров экрана, должно быть разное отображение карточек в
+        ряду:
+      </p>
+      <ol>
+        <li>Десктоп: 4 карточки</li>
+        <li>Планшет: 2 карточки</li>
+        <li>Телефон: 1 карточка</li>
+      </ol>
+      <p>
+        Карточки должны иметь одинаковую высоту в ряду и отступы друг от друга
+      </p>
+    </div>
 
-<body>
+    <div id="container" class="container"></div>
 
-  <div>
-    <h2>Задание 2</h2>
-    <h3>Сетка, для карточек</h3>
-    <p>
-      Необходимо сделать адаптивную сетку, для каточек. <br>
-      Для разных размеров экрана, должно быть разное отображение карточек в ряду:
-    </p>
-    <ol>
-      <li>Десктоп: 4 карточки</li>
-      <li>Планшет: 2 карточки</li>
-      <li>Телефон: 1 карточка</li>
-    </ol>
-    <p>Карточки должны иметь одинаковую высоту в ряду и отступы друг от друга</p>
-  </div>
-
-  <div id="container" class="container">
-
-  </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const $container = document.querySelector("#container");
-      const childCount = 10;
-      for (let i = 0; i <= childCount; i++) {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.innerText = `карточка № ${i}`;
-        $container.appendChild(card);
-      }
-    });
-  </script>
-</body>
-
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const $container = document.querySelector("#container");
+        const childCount = 10;
+        for (let i = 0; i <= childCount; i++) {
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerText = `карточка № ${i}`;
+          $container.appendChild(card);
+        }
+      });
+    </script>
+  </body>
 </html>
