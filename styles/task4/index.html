@@ -1,38 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задание 4</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Задание 4</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
+  <body>
+    <div>
+      <h2>Задание 4</h2>
+      <h3>Модальное окно</h3>
+      <p>
+        Сверстать модальное окно с затемнением фона.
+        <br />
+        С закрытием по клику на фон или крестик.
+        <br />
+        Дополнительно можно сделать открытие окна по нажатию на кнопку.
+        <br />
+        Пример окна:
+      </p>
+      <img src="examplemodal.jpg" alt="Пример модального окна" />
+    </div>
 
-<body>
+    <div class="container">
+      <button class="btn-modal">Открыть окно</button>
+      <div class="overlay"></div>
+      <div class="modal">
+        <div class="modal__header">
+          <h2 class="modal__title">Подтверждение</h2>
+          <button class="modal__close"></button>
+        </div>
+        <div class="modal__content">
+          <p>Вы хотите сохранить изменения в этом документе перед закрытием?</p>
+          <span>Если вы не сохраните, ваши изменения будут потеряны.</span>
+        </div>
+        <div class="modal__actions">
+          <button class="modal__btn-close">Закрыть</button>
+          <button class="modal__btn-save">Сохранить изменения</button>
+        </div>
+      </div>
+    </div>
 
-  <div>
-    <h2>Задание 4</h2>
-    <h3>Модальное окно</h3>
-    <p>
-      Сверстать модальное окно с затемнением фона.
-      <br>
-      С закрытием по клику на фон или крестик.
-      <br>
-      Дополнительно можно сделать открытие окна по нажатию на кнопку.
-      <br>
-      Пример окна:
-    </p>
-    <img src="examplemodal.jpg" alt="Пример модального окна" />
-  </div>
+    <script>
+      const overlay = document.querySelector(".overlay");
+      const modal = document.querySelector(".modal");
+      const btnModal = document.querySelector(".btn-modal");
+      const btnClose = document.querySelector(".modal__close");
+      const btnCloseModal = document.querySelector(".modal__btn-close");
 
-  <div class="container">
+      btnModal.addEventListener("click", () => {
+        overlay.classList.add("active");
+        modal.classList.add("active");
+      });
 
-  </div>
+      btnClose.addEventListener("click", () => {
+        overlay.classList.remove("active");
+        modal.classList.remove("active");
+      });
 
-  <script>
-    // немного покодить тут
-  </script>
+      btnCloseModal.addEventListener("click", () => {
+        overlay.classList.remove("active");
+        modal.classList.remove("active");
+      });
 
-</body>
-
+      overlay.addEventListener("click", () => {
+        overlay.classList.remove("active");
+        modal.classList.remove("active");
+      });
+    </script>
+  </body>
 </html>
